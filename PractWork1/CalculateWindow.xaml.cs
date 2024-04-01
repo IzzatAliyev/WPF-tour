@@ -27,6 +27,7 @@ namespace PractWork1
                 ResultValue.Text = sum.ToString();
                 ResultName.Visibility = Visibility.Visible;
                 ResultValue.Visibility = Visibility.Visible;
+                CloseButton.Focus();
             }
             catch(Exception ex)
             {
