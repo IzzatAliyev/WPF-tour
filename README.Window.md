@@ -1,0 +1,27 @@
+## Window Properties
+
+- **Title**: Sets the title of the window.
+- **BorderBrush**: Sets the border color of the window.
+- **BorderThickness**: Sets the thickness of the window border.
+- **Foreground**: Sets the foreground color (text color) of the window content.
+- **MinHeight**: Sets the minimum height of the window.
+- **MinWidth**: Sets the minimum width of the window.
+- **MaxHeight**: Sets the maximum height of the window.
+- **MaxWidth**: Sets the maximum width of the window.
+- **AllowsTransparency**: Indicates whether the window supports transparency.
+- **Opacity**: Sets the opacity level of the window.
+- **Icon**: Sets the icon for the window.
+- **Cursor**: Sets the cursor appearance when it's over the window.
+- **Topmost**: Sets whether the window appears on top of all other windows.
+- **Height**: Sets the height of the window.
+- **Width**: Sets the width of the window.
+- **FontFamily**: Sets the font family of the window content.
+- **FontSize**: Sets the font size of the window content.
+- **Background**: Sets the background color of the window.
+- **Loaded**: Subscribes to the Loaded event of the window.
+- **WindowStartupLocation**: Sets the initial window startup location to the center of the screen.
+- **WindowState**: Sets the initial window state to Normal (not minimized or maximized).
+- **ResizeMode**: Sets the resizing mode of the window to allow resizing with a grip handle.
+- **SizeToContent**: Sets the behavior of SizeToContent to Manual, so the window size won't automatically adjust based on content.
+- **ShowInTaskbar**: Sets whether the window is shown in the taskbar.
+- **WindowStyle**: Sets the window style to ThreeDBorderWindow.

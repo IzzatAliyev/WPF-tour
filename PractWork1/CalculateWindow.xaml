@@ -1,0 +1,90 @@
+﻿<Window x:Class="PractWork1.CalculateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractWork1"
+        mc:Ignorable="d"
+        Title="Aliyev Izzat, ASTSI-20-1" 
+        FontSize="14"
+        FontFamily="Arial"
+        Height="350" Width="700"
+        Icon="/favicon.png"
+        Background="#0d1117"
+        MinHeight="350" MinWidth="700"
+        MaxHeight="950" MaxWidth="1450"
+        BorderBrush="LightGray"
+        BorderThickness="0.5">
+    <Grid Margin="2" Background="#161b22" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Practical work №1" Foreground="AliceBlue"
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" Grid.Column="1"/>
+        <Label Grid.Column="1" Foreground="AliceBlue"
+               Content="Option 18" 
+               HorizontalAlignment="Center" Grid.Row="1" 
+               VerticalAlignment="Center"/>
+
+        <Label Content="c=" HorizontalAlignment="Left" 
+               Grid.Row="2" Foreground="AliceBlue" 
+               VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <TextBox x:Name="ValueOfC" HorizontalAlignment="Left" 
+                 Margin="75,0,0,0" Grid.Row="2"
+                 Grid.ColumnSpan="2" 
+                 Height="25" Width="150"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Center"/>
+
+
+        <Label Content="d=" HorizontalAlignment="Left" 
+               Grid.Column="2"
+               Grid.Row="2" Foreground="AliceBlue"
+               VerticalAlignment="Center" Margin="20,0,0,0"/>
+        <TextBox x:Name="ValueOfD" HorizontalAlignment="Left" 
+                 Margin="45,0,0,0" Grid.Row="2"
+                 Grid.Column="2"
+                 Height="25" Width="150"
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Center"/>
+
+        <Label x:Name="ResultName" Content="2c+d=" 
+               HorizontalAlignment="Left" Visibility="Hidden"
+               Grid.Column="1" Grid.Row="3" Foreground="AliceBlue" 
+               VerticalAlignment="Center" Margin="30,0,0,0"/>
+        <TextBox x:Name="ResultValue" HorizontalAlignment="Left"
+                    IsEnabled="False" Visibility="Hidden"
+                    Margin="75,0,0,0" Grid.Row="3"
+                    Grid.Column="1" Height="20" Width="150"
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Center"/>
+        <Button Content="Execute" Click="ExecuteCalculation"
+                Height="30" Width="70"
+                BorderThickness="1" Foreground="AliceBlue"
+                Background="LightSlateGray"
+                BorderBrush="LightGray"
+                HorizontalAlignment="Center" 
+                Grid.Row="4" VerticalAlignment="Center"/>
+
+        <Button Content="Exit" Click="CloseWindow"
+                Height="30" Width="70" 
+                BorderThickness="1" Foreground="AliceBlue"
+                Background="LightSlateGray"
+                BorderBrush="LightGray"
+                HorizontalAlignment="Center" 
+                Grid.Column="3"
+                Grid.Row="4" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>
